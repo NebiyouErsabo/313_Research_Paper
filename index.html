@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exploring Supercomputers at TAMU! Terra, Grace, and FASTER</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="img/png" size="45x45" href="./imgs/TAM-LogoBox.png"/>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;600&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <img src="./imgs/TAMU_logo.jpeg" width="120" height="120" class="logo" alt="Texas A&M University">
+            <div class="header_wrapper">
+                <h1 class="title">Exploring Supercomputers at TAMU! Terra, Grace, and FASTER</h1>
+                <div class="authors">
+                    <h3 class="author_title">Authors:</h3>
+                    <h3 class="author">Hayden Moore <a href = "mailto:mooreh2@tamu.edu" class="header_link">mooreh2@tamu.edu</a></h3>
+                    <h3 class="author">Sam Hirvilampi  <a href="mailto:samuli.hirvilampi@tamu.edu" class="header_link">samuli.hirvilampi@tamu.edu</a></h3>
+                    <h3 class="author">Nebiyou Ersabo  <a href="mailto:nebiyou@tamu.edu" class="header_link">nebiyou@tamu.edu</a></h3>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="table_content_card" id="header">
+            <h2 class="table_header">Table of Contents</h2>
+            <ul class="table_list">
+                <li class="table_link "><a href="#1" class="table_link sub">1.Introduction</a>
+                    <ul>
+                        <li class="table_link inner"><a href="#1.1" class="table_link inner">1.1. What are Supercomputers?</a></li>
+                    </ul>
+                </li>
+                <li class="table_link "><a href="#2" class="table_link sub">2. Why does Texas A&M have Supercomputers?</a>
+                    <ul>
+                        <li class="table_link inner"><a href="#2.1" class="table_link inner">2.1. TAMU HPRC (High Performance Research Computing)</a></li>
+                    </ul>
+                </li>
+                <li class="table_link"><a href="#3" class="table_link">3. Terra</a></li>
+                <li class="table_link"><a href="#4" class="table_link">4. Grace</a></li>
+                <li class="table_link"><a href="#5" class="table_link">5. Faster</a></li>
+                <li class="table_link"><a href="#6" class="table_link">6. Summary</a></li>
+                <li class="table_link"><a href="#7" class="table_link">7. References</a></li>
+            </ul>
+        </div>
+        <div class="border"></div>
+        <div class="section_1">
+            <h2 class="section_header" id="1">1. Introduction</h2>
+            <p class="content">As one of the largest Universities in the world, Texas A&M University is home to several supercomputers on campus. Faculty and students 
+                across all majors delegate complex and labor-intensive tasks to these supercomputing devices daily. Texas A&M HPRC (High Performance Research Computing) 
+                has served the members of this institution with access to a number of supercomputers which can be referred to as clusters. Since 1989, eighteen clusters 
+                have been offered, and currently, four are in use. The contents of this article will detail three of the high performing supercomputers at the school - 
+                Terra, Grace, and FASTER.
+            </p>
+        </div>
+        <div class="border_content"><a href="#header"><button class="to_top">Back to Table of Contents</button><a></div>
+        <div class="section_1_1">
+            <h2 class="section_header" id="1.1">1.1. What are Supercomputers?</h2>
+            <p class="content">When you perform a task on your personal device, it is more than likely that the computer you are using is utilizing a single CPU (central processing unit) 
+                to complete the assigned task. The CPU can be thought of as the hardware inside of your computer that allows it to “think”. When the user’s goal is to load a web page or play a 
+                song on a streaming service, one central processing unit is not an issue. These processors can be housed with one or more cores. On most modern computers, four cores will 
+                get the job done, but some have more - upwards of around twelve <a href="#HPRC-Videos" class="inline_citation">[HPRC-Videos]</a>.
+            </p>
+            <p class="content">On the other hand, some tasks require exponentially more calculations to be executed at an efficient speed, and when this is the case, supercomputers can be 
+                very helpful and solve problems much faster. In contrast with personal devices, supercomputers at A&M contain processors known as nodes which each have multiple cores. 
+                For instance, with Terra, one of our school’s supercomputers, the nodes often hold 28 cores. The nodes that hold these cores are linked together to be able to work in tandem, 
+                creating what is known as a cluster <a href="#HPRC-Videos" class="inline_citation">[HPRC-Videos]</a>.
+            </p>
+            <div class="pictures">
+                <img src="./imgs/cluster_diagram.png" id = "pics" alt="Basic cluster diagram">
+                <p class="disciption"><span class="emphasize">Figure 1. </span>Basic Cluster Diagram <a href="#HPRC-Videos" class="inline_citation">[HPRC-Videos]</a></p>
+            </div>
+            <p class="content">
+                Nodes are connected by interconnects, which aid in allowing the device to communicate node to node and also with I/O and data storage <a href="#IBM" class="inline_citation">[IBM]</a>. An advantage of using this powerful technology 
+                is the increased opportunity for parallelized tasks. This is the idea that for many tasks if a set of instructions can be broken down and executed simultaneously, the user will be 
+                able to experience significant performance enhancements <a href="#GeeksforGeeks" class="inline_citation">[GeeksforGeeks]</a>. With supercomputers, it’s a matter of numbers. Comparing the processing power given by each cluster supported by all of its 
+                nodes running on each of its cores, the single CPU and four to twelve cores don’t compare.
+            </p>
+            <div class="pictures">
+                <img src="./imgs/architecture.png" id = "pics" alt="Schematic of typical architecture of modern supercomputers">
+                <p class="disciption"><span class="emphasize">Figure 2. </span>Schematic of Typical Architecture of Modern Supercomputers <a href="#ResearchGate" class="inline_citation">[ResearchGate]</a></p>
+            </div>
+            <p class="content">
+                Most would assume that supercomputers have a speed advantage given these advances that they have over traditional computers. How would this difference be measured, though? 
+                <span class="emphasize">Floating Point Operations per second (FLOPS)</span> is used by experts to gauge how fast a supercomputer is. A floating point operation is an operation that involves a number with a decimal. 
+                The fastest supercomputer in the world currently resides in Japan - the Fugaku. It has a speed of 442 PetaFLOPS. One PetaFLOP is equal to a thousand trillion FLOPS. In comparison, 
+                the Grace System, our fastest supercomputer here, has a peak performance of 6.2 PetaFLOPS. To put these numbers into perspective, most personal computers run in the GigaFLOPS range, 
+                which would be about a million times slower than many supercomputers <a href="#IBM" class="inline_citation">[IBM]</a>.
+            </p>
+        </div>
+        <div class="border_content"><a href="#header"><button class="to_top">Back to Table of Contents</button><a></div>
+        <div class="section_2">
+            <h2 class="section_header" id="2">2. Why does Texas A&M have Supercomputers?</h2>
+            <p class="content">
+                Texas A&M is regarded as one of the most well-known institutions in the world. Research is a key contributor to the school retaining its status on both a domestic and global scale
+                and the clusters offered are a key driver for this. Fields such as science, technology, and engineering benefit tremendously from the work that is able to be done at this campus by researchers, 
+                and annual expenditures made by the University reflect that. In 2019, Texas A&M spent <span class="emphasize">$952 million</span> on Research and Development. This figure was followed by 
+                <span class="emphasize">$1.131 billion</span> in 2020.
+            </p>
+            <div class="pictures">
+                <img src="./imgs/ranking.jpeg" id = "pics" alt="Texas A&M's overall ranking among U.S institutions for its research and development expenditures">
+                <p class="disciption"><span class="emphasize">Figure 3. </span>Texas A&M's Overall Ranking Among U.S Institutions for its Research and Development Expenditures <a href="#Henton" class="inline_citation">[Henton]</a></p>
+            </div>
+            <p class="content">
+                The decision backs up the perception that A&M believes it is in the best interest of this University, our state, our country, and our world to continue pushing toward the unknown and seeking the most cutting-edge 
+                technologies. The supercomputing devices housed on campus here are prime examples of the great resources available that make the unthinkable possible. Recent research that has been completed recently 
+                using these devices includes ‘Molecular dynamics simulation of high strain rate nanoindentation’ and ‘Machine Learning-Informed Numerical Weather Prediction’ <a href="#HPRC-Videos" class="inline_citation">[HPRC-Videos]</a>.
+            </p>
+            <div class="pictures">
+                <img src="./imgs/molecular_dynamics.png" id = "pics" alt="Molecular dynamics simulation research exhibit">
+                <p class="disciption"><span class="emphasize">Figure 4. </span>Molecular Dynamics Simulation Research Exhibit <a href="#HPRC-Exhibit" class="inline_citation">[HPRC-Exhibit]</a></p>
+            </div>
+            <div class="pictures" id="weather">
+                <img src="./imgs/weather_prediction.png" id = "pics" alt="Machine learning for weather predictions research exhibit">
+                <p class="disciption"><span class="emphasize">Figure 5. </span>Machine Learning for Weather Prediction Research Exhibit <a href="#HPRC-Exhibit" class="inline_citation">[HPRC-Exhibit]</a></p>
+            </div>
+        </div>
+        <div class="border_content"><a href="#header"><button class="to_top">Back to Table of Contents</button><a></div>
+        <div class="section_2_1">
+            <h2 class="section_header" id="2.1">2.1. TAMU HPRC (High Performance Research Computing)</h2>
+            <p class="content">
+                The High Performance Research Computing Group at Texas A&M has provided vital resources to researchers for years. The computing technology that has been offered through this group helps students and faculty 
+                in countless areas, such as quantum optimization and climate prediction <a href="#HPRC-Wiki" class="inline_citation">[HPRC-Wiki]</a>. Currently, HPRC provides access to four supercomputing clusters. This article will describe all currently operating supercomputers, 
+                except for ViDal. 
+            </p>
+            <p class="content">
+                Accessing the technologies is made easy by HPRC. If you wish to access the clusters offered, you can use their website to create an account with your NetID, password, and other relevant information. One caveat of 
+                signing up for these accounts as a student that differs from other accounts you might create on campus is that you have to retrieve what is known as a “Principal Investigator’s Contact Information”. This is staff-specific 
+                information that is needed to simply say that this staff member is vouching for you and believes you should be authorized to use the clusters.
+            </p>
+            <p class="content">
+                When your application gets approved (usually one to two business days later), the HPRC wiki page (<a href="https://hprc.tamu.edu/wiki/Main_Page" class="inline_link">https://hprc.tamu.edu/wiki/Main_Page</a>) is an excellent resource to show users the different capabilities 
+                of each of the clusters and how to get started using them. 
+            </p>
+            <p class="content">
+                Once you receive notice that your application was accepted, there are a number of ways that you can actually access the clusters. First, HPRC offers a portal from your web browser by accessing the link: 
+                <a href="https://portal.hprc.tamu.edu/" class="inline_link">https://portal.hprc.tamu.edu/</a>. This option provides the user with the most intuitive interface to work with and can be beneficial for beginners. While the interface is less text-heavy and more graphical, there are still many 
+                powerful tools that can be employed from your browser. From the portal, you can transfer files, submit jobs, as well as use interactive app shells for each cluster. If you are using Windows, the second option is MobaXterm, 
+                which HPRC recommends for its users. There are a couple of key reminders to note when choosing this route. First, the user will log in with their NetID and specify Port 22. When prompted, you will use your typical TAMU password. 
+                It should be noted that a local terminal can be used for this as well by using the ‘ssh’ command followed by their NetID followed by the correct cluster as the remote host. For example, to log in to the Terra cluster, you would 
+                type <span class="emphasize">“ssh [NetID]@terra.tamu.edu”</span>. Additionally, Putty can be used, but additional installation steps are needed, and generally, MobaXterm is regarded as more powerful. For tips related to specific uses of the clusters and how to 
+                get the most out of the great resources available, remember to reference the wiki page. 
+
+            </p>
+        </div>
+        <div class="border_content"><a href="#header"><button class="to_top">Back to Table of Contents</button><a></div>
+        <div class="section_3">
+            <h2 class="section_header" id="3">3. Terra </h2>
+            <p class="content">
+                With the basics of using the HPRC system explained, we will now analyze the different clusters in depth.
+                The Terra System is the oldest out of itself and the Grace and FASTER Systems, with its first active year in 2016. 
+                In addition, it is the slowest of these three, measuring a peak performance of 377 TerraFLOPS. The device is home to 320 compute nodes, 3 login nodes, and 9,632 total cores. When 
+                analyzing the memory available on a given node in this system, there are 256 nodes that have 64 GB of memory and 48 nodes that have 128 GB of memory. The operating system it uses is Linux (CentOS 7). We referenced 
+                the need for interconnect functionality earlier in the article, and with Terra, they used Intel Omni-Path Fabric 100 Series switches.
+                Observing the naming choice of this system, you will find that the word “terra” is Latin for “this planet”. This choice was deliberate, as a key purpose of this supercomputer was to study images of the Earth provided by satellites.
+            </p>
+            <div class="pictures">
+                <img src="./imgs/terra.jpeg" id = "pics" class="supercomputers" alt="Texas A&M's Terra supercomputer">
+                <p class="disciption"><span class="emphasize">Figure 6. </span>Texas A&M's Terra Supercomputer <a href="#Terra" class="inline_citation">[Terra]</a></p>
+            </div>
+            <p class="content">
+                For a user to access Terra from their local machine, they can type <span class="emphasize">ssh [NetID]@terra.tamu.edu</span> in the terminal after they have applied for the proper privileges from the HPRC website.
+                Users have a finite amount of file space when they are using the supercomputers at Texas A&M. When you log ssh in, your current disk usage will be shown and it is key that you do not exceed this limit <a href="#HPRC-Wiki" class="inline_citation">[HPRC-Wiki]</a>.
+                When using Terra, there are a number of actions that you can perform. One such action is file transfer using data transfer utilities SCP/SFTP, FTP, rsync, rclone, and portal. These are protocols used as a means of transferring files between local and remote hosts
+            </p>
+            <p class="content">
+                Terra also allows users to compile and run programs, similar to how you would on your local machine. With Terra, there are numerous modules that can be loaded by the user that provides access to software packages. Running the 
+                command <span class="emphasize">module load [module name]</span> achieves this. Some highly effective numerical libraries available to the user are MKL and Knitro. MKL is helpful in solving problems related to fast fourier 
+                transforms, vector math, and more. Knitro is an excellent tool to act as a solver for nonlinear optimization problems <a href="#HPRC-Wiki" class="inline_citation">[HPRC-Wiki]</a>.
+                Additionally, terra allows you to submit, delete, control, and monitor the jobs.
+
+            </p>
+        </div>
+        <div class="border_content"><a href="#header"><button class="to_top">Back to Table of Contents</button><a></div>
+        <div class="section_4">
+            <h2 class="section_header" id="4">4. Grace </h2>
+            <p class="content">
+                Created in the Spring of 2021, Texas A&M’s GRACE system is a Dell x86 HPC Cluster. It was named after Grace Hopper, who was a computer scientist and a pioneer of computer programming. It is located at the West Campus Data Center.
+                This is the University’s flagship HPC providing a peak performance of 6.2 PetaFLOPS. GRACE runs on Linux (CentOS 7) like Terra. Additionally, the cluster has a total of 44,656 compute cores, 5 login nodes (grace1, grace2 … grace5), and 925 compute nodes. 
+                800 of these compute nodes have 48 cores with 384 GB of RAM each. There are also 117 GPU nodes each containing 384 GB of RAM as well. Grace’s interconnecting fabric consists of a two-level fat-tree based on HDR 100 InfiniBand. 
+                The local disk space is 1.6TB NVMe and 480 GB SSD <a href="#" class="inline_citation">[HPRC-Wiki]</a>. Grace has two global file systems which are /home and /scratch. Both of these file systems are hosted on 5PB of disk space. Grace will 
+                help researchers in all kinds of fields from machine learning, AI, and quantum computing to geosciences, drug design, biomedical, autonomous vehicles, fluid dynamics, and data analytics.
+            </p>
+            <div class="pictures">
+                <img src="./imgs/grace.jpeg" id = "pics" class="supercomputers" alt="Texas A&M's Grace supercomputer">
+                <p class="disciption"><span class="emphasize">Figure 7. </span>Texas A&M's Grace Supercomputer <a href="#Grace" class="inline_citation">[Grace]</a></p>
+            </div>
+            <p class="content">
+                For a user to access Grace from their local machine, they can type <span class="emphasize">ssh [NetID]@grace.hprc.tamu.edu</span> in the terminal after they have applied for the proper privileges from the HPRC website. Grace can also be accessed off-campus 
+                by connecting to the TAMU VPN. Each login session has eight cores allocated. Each Grace login node has a 10 Gb ethernet connection to the intra-campus network. The data transfer utilities available on these login nodes are scp, sftp, and rsync. MobaXterm or 
+                WinSCP are the two options for file transferring between Grace and a Windows machine. Grace also allows the user to run and compile programs and it too uses <span class="emphasize">module load [module name]</span> to do so <a href="#" class="inline_citation">[HPRC-Wiki]</a>.
+            </p>
+            <p class="content">
+                The system contains the environment variables HOME, SCRATCH, PWD, PATH, USER, and SLURM which allows the creation of new variables in the environment of an executing job. Some of the important SLURM variables are SLURM_JOBID, SLURM_JOB_NAME, SLURM_JOB_PARTITION, SLURM_SUBMIT_DIR, and TMPDIR. 
+                To view all the other environment variables the user can run the <span class="emphasize">command env | grep SLURM</span> which will print all the variables in the output file. SLURM is also used when you want to submit the job file which is run by using the 
+                command <span class="emphasize">sbatch MyJob.slurm</span>.
+            </p>
+        </div>
+        <div class="border_content"><a href="#header"><button class="to_top">Back to Table of Contents</button><a></div>
+        <div class="section_5">
+            <h2 class="section_header" id="5">5. FASTER </h2>
+            <p class="content">
+                FASTER is the second strongest computer of the three. It is a Dell x86 HPC Cluster. It was produced in 2021 and is also located at the West Campus Data Center. The acronym stands for “Fostering Accelerated Sciences Transformation Education and Research”. The cluster will be used to aid 
+                researchers in fields like machine learning, artificial intelligence, drug design, cybersecurity, oil and gas, geosciences, data analytics, and much more. It has a peak performance of 1.2 petaFlops <a href="#HPRC-Wiki" class="inline_link">[HPRC-Wiki]</a>. This cluster has 11,520 compute cores and 180 compute nodes. Each of the 180 
+                compute nodes has 64 cores and 256 GB RAM each. FASTER runs on Linux (CentOS 8) operating system. Its interconnecting fabric is made up of Mellanox HDR100 InfiniBand for MPI and Storage and Liqid PCIe Gen4 for GPU composability. FASTER’s global disk space is the same as Grace's (5PB).
+            </p>
+            <div class="pictures">
+                <img src="./imgs/faster.jpeg" id = "pics" class="supercomputers" alt="Texas A&M's Faster supercomputer">
+                <p class="disciption"><span class="emphasize">Figure 7. </span>Texas A&M's Faster Supercomputer <a href="#Faster" class="inline_citation">[Faster]</a></p>
+            </div>
+            <p class="content">
+                For a user to access FASTER from their local machine, they can type <span class="emphasize">ssh [NetID]@faster.hprc.tamu.edu</span> in the terminal after they have applied for the proper privileges from the HPRC website. Grace can also be accessed off-campus by connecting to the TAMU VPN. XSEDE users will use
+                <span class="emphasize">ssh -J [fasterusername]@faster-jump.hprc.tamu.edu:8822</span> and then <span class="emphasize">[fasterusername]@login.faster.hprc.tamu.edu</span>.
+            </p>
+            <p class="content">
+                FASTER has two global file systems which are /home and /scratch. Both of these are hosted on 5PB of disk space. The file systems are organized using Lustre.
+                Just like Grace, each login session is one hour with 8 cores allocated. Violation of these limits will automatically kill the process and repeated violations can result in access privileges being removed.
+                FASTER also allows the user to run and compile programs and it too uses <span class="emphasize">module load [module name]</span> to do so.
+                30% of the computing resources are allocated to researchers across the nation by the XSEDE program (Extreme Science and Engineering Discovery Environment). XSEDE is a collection of resources that researchers can share. One of the FASTER nodes is dedicated to XSEDE users which are listed as “XSEDE TAMU FASTER”.
+            </p>
+            <p class="content">
+                Transferring files using FASTER is available as well. The data transfer utilities available to the user are sftp, scp, rsync and there is a 10 Gb ethernet connection to the intra-campus network. In order to transfer larger files the user should use Globus Connect with either "TAMU FASTER DTN1" or "XSEDE TAMU FASTER" as the endpoint. 
+                File transfers between FASTER and Windows machines should use MobaXterm or WinSCP.
+            </p>
+            <p class="content">
+                The system contains the environment variables HOME, SCRATCH, PWD, PATH, USER, and SLURM which allows the creation of new variables in the environment of an executing job. Some of the important SLURM variables are SLURM_JOBID, SLURM_JOB_NAME, SLURM_JOB_PARTITION, SLURM_SUBMIT_DIR, and TMPDIR. To view all the other environment 
+                variables the user can run the command <span class="emphasize">env | grep SLURM</span> which will print all the variables in the output file. SLURM is also used when you want to submit the job file which is run by using the command <span class="emphasize">sbatch MyJob.slurm </span><a href="#HPRC-Wiki" class="inline_citation">[HPRC-Wiki]</a>.
+            </p>
+        </div>
+        <div class="border_content"><a href="#header"><button class="to_top">Back to Table of Contents</button><a></div>
+        <div class="section_6">
+            <h2 class="section_header" id="6">6. Summary </h2>
+            <p class="content">
+                Supercomputers are a powerful tool that researchers can use to process data at speeds that typical personal computers are wholly incapable of. A supercomputer, or cluster, can be thought of as a linked system. Connected by interconnects, a large group of nodes, each with a significant number of processors, 
+                are capable of computation due to the opportunity to process multiple tasks at once. Many personal computers have one central processing unit (CPU), while supercomputers are filled with many processors.
+            </p>
+            <p class="content">
+                As students of Texas A&M, we are very fortunate to have access to such powerful resources as the Terra, Grace, and FASTER supercomputers. These devices help our university maintain its high standing as one of the premier research institutions in the world. The technology at our disposal allows students and faculty 
+                to explore areas of climate science, engineering, medicine, and so much more <a href="#HPC-Wire" class="inline_citation">[HPRC-Wire]</a>. The three supercomputers mentioned in this article have differing specifications. For instance, Grace would be considered the fastest, with a peak performance of 6.2 PetaFlops. Additionally, the allocation of resources by the XSEDE Program allows 
+                many across the nation to utilize FASTER’s capabilities. While all of the clusters have differences, the purpose they serve to their users facilitates incredible growth in many areas.
+            </p>
+        </div>
+        <div class="border_content"><a href="#header"><button class="to_top">Back to Table of Contents</button><a></div>
+        <div class="section_7">
+            <h2 class="section_header" id="7">7. References </h2>
+            <ul class="references_list">
+                <li class="references_item" id="Faster"><span class="emphasize">[Faster] </span>Faster: “Texas A&M High Performance Research Computing.” MRI FASTER | High Performance Research Computing, <a class="inline_link" href="https://hprc.tamu.edu/faster/" target="_blank">https://hprc.tamu.edu/faster/</a>.</li>
+                <li class="references_item" id="GeeksforGeeks"><span class="emphasize">[GeeksforGeeks]</span> GeeksforGeeks: “Introduction to Parallel Computing.” GeeksforGeeks, 4 June 2021, <a class="inline_link" href="https://www.geeksforgeeks.org/introduction-to-parallel-computing/" target="_blank">https://www.geeksforgeeks.org/introduction-to-parallel-computing/</a>.</li>
+                <li class="references_item" id="Grace"><span class="emphasize">[Grace] </span>Grace: "Grace:Intro.” Hprc Banner Tamu.png, <a class="inline_link" href="https://hprc.tamu.edu/wiki/Grace:Intro" target="_blank">https://hprc.tamu.edu/wiki/Grace:Intro</a>.</li>
+                <li class="references_item" id="Henton"><span class="emphasize">[Henton] </span>Henton, Lesley. “Texas A&M Ranks 14th in Total U.S. Research and Development Expenditures, Outpaces Other Texas Universities.” Texas A&M Today, 10 Jan. 2022, <a class="inline_link" href="https://today.tamu.edu/2022/01/10/texas-am-ranks-14th-in-total-u-s-research-and-development-expenditures-outpaces-other-texas-universities/" target="_blank">https://today.tamu.edu/2022/01/10/texas-am-ranks-14th-in-total-u-s-research-and-development-expenditures-outpaces-other-texas-universities/</a>.</li>
+                <li class="references_item" id="HPC-Wire"><span class="emphasize">[HPC-Wire] </span>HPC-Wire: “NSF Grant Supports Texas A&M's Acquisition of High Performance Computing Platform.” HPCwire, 7 Aug. 2020, <a class="inline_link" href="https://www.hpcwire.com/off-the-wire/nsf-grant-supports-texas-ams-acquisition-of-high-performance-computing-platform/" target="_blank">https://www.hpcwire.com/off-the-wire/nsf-grant-supports-texas-ams-acquisition-of-high-performance-computing-platform/</a>.</li>
+                <li class="references_item" id="HPRC-Exhibit"><span class="emphasize">[HPRC-Exhibit] </span>“Texas A&M High Performance Research Computing.” SC20 Exhibit Materials | High Performance Research Computing, <a class="inline_link" href="https://hprc.tamu.edu/events/conferences/sc20/" target="_blank">https://hprc.tamu.edu/events/conferences/sc20/</a>.</li>
+                <li class="references_item" id="HPRC-Videos"><span class="emphasize">[HPRC-Videos]</span> HPRC-Videos: Texas A&M HPRC, director. What Is HPRC? YouTube, YouTube, 21 Apr. 2020, <a class="inline_link" href="https://www.youtube.com/watch?v=rfqtDigwgMg&list=PLHR4HLly3i4YrkNWcUE77t8i-AkwN5AN8" target="_blank">https://www.youtube.com/watch?v=rfqtDigwgMg&list=PLHR4HLly3i4YrkNWcUE77t8i-AkwN5AN8</a>.</li>
+                <li class="references_item" id="HPRC-Wiki"><span class="emphasize">[HPRC-Wiki]</span> HPRC-Wiki: “Main Page.” HPRC Banner Tamu.png, <a class="inline_link" href="https://hprc.tamu.edu/wiki/Main_Page" target="_blank">https://hprc.tamu.edu/wiki/Main_Page</a>.</li>
+                <li class="references_item" id="IBM"><span class="emphasize">[IBM]</span> IBM:  “What Is Supercomputing?” IBM, <a class="inline_link" href="https://www.ibm.com/topics/supercomputing" target="_blank">https://www.ibm.com/topics/supercomputing</a>.</li>
+                <li class="references_item" id="ResearchGate"><span class="emphasize">[ResearchGate] </span>ResearchGate: Schematic of Typical Architecture of a Modern Supercomputer.<a class="inline_link" href="https://www.researchgate.net/figure/Schematic-of-typical-architecture-of-a-modern-supercomputer_fig1_328946498" target="_blank">https://www.researchgate.net/figure/Schematic-of-typical-architecture-of-a-modern-supercomputer_fig1_328946498</a>.</li>
+                <li class="references_item" id="Terra"><span class="emphasize">[Terra] </span>Terra: "Terra:Intro.” Hprc Banner Tamu.png, <a class="inline_link" href="https://hprc.tamu.edu/wiki/Terra:Intro" target="_blank">https://hprc.tamu.edu/wiki/Terra:Intro</a>.</li>
+            </ul>
+        </div>
+        <div class="border_content last"><a href="#header"><button class="to_top">Back to Table of Contents</button><a></div>
+    </main>
+</body>
+</html>
